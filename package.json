@@ -1,6 +1,6 @@
 {
   "name": "terminalizer-v2",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "description": "Record your terminal and generate animated gif images or share a web player",
   "main": "bin/app.js",
   "author": "Mohammad Fares <faressoft.com@gmail.com>",
@@ -12,7 +12,7 @@
     "url": "https://github.com/stokedowl/terminalizer-v2.git"
   },
   "bin": {
-    "terminalizer": "bin/app.js"
+    "terminalizer-v2": "bin/app.js"
   },
   "scripts": {
     "dev": "NODE_ENV=development webpack --color --watch",

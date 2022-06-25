@@ -97,7 +97,7 @@ Built while listening to [Nyan Cat](https://www.youtube.com/watch?v=QH2-TGUlwu4)
 You need to install [Node.js](https://nodejs.org/en/download/) first, then install the tool globally using this command:
 
 ```bash
-npm install -g terminalizer
+npm install -g terminalizer-v2
 ```
 
 <p align="center"><img src="/img/install.gif?raw=true"/></p>
@@ -111,19 +111,19 @@ The installation should be very smooth with Node.js v4-v12. For newer versions, 
 Start recording your terminal using the `record` command.
 
 ```bash
-terminalizer record demo
+terminalizer-v2 record demo
 ```
 
 A file called `demo.yml` will be created in the current directory. You can open it using any editor to edit the configurations and the recorded frames. You can replay your recording using the `play` command.
 
 ```bash
-terminalizer play demo
+terminalizer-v2 play demo
 ```
 
 Now let's render our recording as an animated gif.
 
 ```bash
-terminalizer render demo
+terminalizer-v2 render demo
 ```
 
 ## Compression
@@ -135,7 +135,7 @@ GIF compression is not implemented yet. For now we recommend [https://gifcompres
 > You can use the `--help` option to get more details about the commands and their options
 
 ```bash
-terminalizer <command> [options]
+terminalizer-v2 <command> [options]
 ```
 
 ## Init
@@ -143,7 +143,7 @@ terminalizer <command> [options]
 > Create a global config directory
 
 ```bash
-terminalizer init
+terminalizer-v2 init
 ```
 
 ## Config
@@ -151,7 +151,7 @@ terminalizer init
 > Generate a config file in the current directory
 
 ```bash
-terminalizer config
+terminalizer-v2 config
 ```
 
 ## Record
@@ -159,7 +159,7 @@ terminalizer config
 > Record your terminal and create a recording file
 
 ```bash
-terminalizer record <recordingFile>
+terminalizer-v2 record <recordingFile>
 ```
 
 Options
@@ -173,8 +173,8 @@ Options
 Examples
 
 ```
-terminalizer record foo                      Start recording and create a recording file called foo.yml
-terminalizer record foo --config config.yml  Start recording with your own configurations
+terminalizer-v2 record foo                      Start recording and create a recording file called foo.yml
+terminalizer-v2 record foo --config config.yml  Start recording with your own configurations
 ```
 
 ## Play
@@ -182,7 +182,7 @@ terminalizer record foo --config config.yml  Start recording with your own confi
 > Play a recording file on your terminal
 
 ```bash
-terminalizer play <recordingFile>
+terminalizer-v2 play <recordingFile>
 ```
 
 Options
@@ -197,7 +197,7 @@ Options
 > Render a recording file as an animated gif image
 
 ```bash
-terminalizer render <recordingFile>
+terminalizer-v2 render <recordingFile>
 ```
 
 Options
@@ -213,7 +213,7 @@ Options
 > Upload a recording file and get a link for an online player
 
 ```bash
-terminalizer share <recordingFile>
+terminalizer-v2 share <recordingFile>
 ```
 
 ## Generate
@@ -221,7 +221,7 @@ terminalizer share <recordingFile>
 > Generate a web player for a recording file
 
 ```bash
-terminalizer generate <recordingFile>
+terminalizer-v2 generate <recordingFile>
 ```
 
 # Configurations
@@ -231,13 +231,13 @@ The default `config.yml` file is stored under the root directory of the project.
 > Use any editor to edit the copied `config.yml`, then use the `-c` option to override the default one.
 
 ```bash
-terminalizer config
+terminalizer-v2 config
 ```
 
 > RECOMMENDED, use the `init` command to create a global config file to be used instead of the default one.
 
 ```bash
-terminalizer init
+terminalizer-v2 init
 ```
 
 For Linux and MacOS, the created directory is located under the home directory `~/.terminalizer`. For Windows, it is located under the `AppData`.
@@ -326,7 +326,7 @@ watermark:
 
 ## Frame Box
 
-Terminalizer comes with predefined frames that you can use to make your GIF images look cool.
+terminalizer-v2 comes with predefined frames that you can use to make your GIF images look cool.
 
 * `frameBox.type`: Can be `null`, `window`, `floating`, or `solid`.
 * `frameBox.title`: To display a title for the frame or `null`.
@@ -416,7 +416,7 @@ The default command that gets recorded for Linux is `bash -l`. You need to chang
 * Generate a config file in the current directory
 
 ```bash
-terminalizer config
+terminalizer-v2 config
 ```
 
 * Open the generated config file in your preferred editor.
@@ -435,7 +435,7 @@ fontFamily: "Meslo for Powerline, Meslo LG M for Powerline"
 * Use the `-c` option to override the config file:
 
 ```bash
-terminalizer record demo -c config.yml
+terminalizer-v2 record demo -c config.yml
 ```
 
 # Issues
